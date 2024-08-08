@@ -1,19 +1,29 @@
 :root{
+    --base-colour: white;
+    --base-variant: #e8e9ed;
     --colour-1: #0f1016;
     --text-colour: #f0f0f0;
+    --secondary-text: #232738;
+    --primary-colour: #3a435d;
     --accent-colour: #006aff;
 }
-
+.darkmode{
+    --base-colour: #070b1d;
+    --base-variant: #101425;
+    --colour-1: #0f1016;
+    --text-colour: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-colour: #3a435d;
+    --accent-colour: #0071ff;
+}
 *{
     margin: 0;
     padding: 0;
 }
-
 html{
     font-size: 12pt;
     font-family: Poppins, Segoe UI, Tahoma, sans-serif;
 }
-
 nav{
     height: 60px;
     background-color: var(--colour-1);
@@ -21,7 +31,6 @@ nav{
     justify-content: flex-end;
     align-items: center;
 }
-
 .links-container{
     height: 100%;
     width: 100%;
@@ -29,7 +38,6 @@ nav{
     flex-direction: row;
     align-items: center;
 }
-
 nav a{
     height: 100%;
     padding: 0 20px;
@@ -38,40 +46,35 @@ nav a{
     text-decoration: none;
     color: var(--text-colour);
 }
-
 nav a:hover{
     background-color: var(--accent-colour);
 }
-
-nav a.home-link{
+nav .home-link{
     margin-right: auto;
 }
-
 nav svg{
     fill: var(--text-colour);
 }
-
 #sidebar-active{
     display: none;
 }
-
 .open-sidebar-button, .close-sidebar-button{
-    padding: 0 20px;
     display: none;
 }
-
-@media(max-width: 410px){
+@media(max-width: 450px){
     .links-container{
         flex-direction: column;
         align-items: flex-start;
+
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         z-index: 10;
         width: 300px;
-        
+
         background-color: var(--colour-1);
-        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
     }
     nav a{
         box-sizing: border-box;
@@ -81,9 +84,18 @@ nav svg{
         justify-content: flex-start;
     }
     .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
         display: block;
     }
     #sidebar-active:checked ~ .links-container{
-        display: flex;
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
     }
 }
