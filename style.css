@@ -98,4 +98,7 @@ nav svg{
         left: 0;
         z-index: 9;
     }
+    #theme-switch {
+        margin: 20px;
+    }
 }
