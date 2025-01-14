@@ -1,0 +1,31 @@
+:root {
+    font-size: 17px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
+}
+
+@font-face {
+    font-family: "Type1";
+    src: url("fonts/type1/Font1-Regular.otf") format("opentype"),
+         url("fonts/type1/Font1-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Type2";
+    src: url("fonts/type2/Font2-Regular.otf") format("opentype"),
+         url("fonts/type2/Font2-Regular.ttf") format("truetype");
+    
+}
+
+body {
+    font-family: 'Type1', sans-serif;
+}
