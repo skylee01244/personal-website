@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Lee Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script defer src='./index.js'></script>  
-    <!-- Link Devicon for icons -->
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -26,38 +29,202 @@
             </div>
         </nav>
     </header>
+
+    <!-- Introduction Subsection -->
+    <section id="about-section">
+        <h2>Hey World, I'm Sky!</h2>
+        <div class="headshot">
+            <img src="images/8.png" alt="headshot">
+        </div>
+        <div class="bio">
+            <p>
+                Hey! I’m Sky, a Computer Science undergraduate at the University of Sydney with a passion for game theory and problem-solving. <br>
+                With a strong foundation in Computer Science & Data Science, I bring a sharp technical skillset and a curiosity-driven approach to experimentation.
+            </p>
+            <br>
+            <p>
+                Outside of career and academics, I enjoy playing with my cat, watching movies, cycling, and calisthenics!
+            </p>
+        </div>
+        <div class="social-links">
+            <!-- <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a> -->
+            <!-- <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa-brands fa-square-youtube"></i>
+            </a> -->
+            <a href="https://www.linkedin.com/in/skylee01244/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/skylee01244" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
     
+    <div class="divider"></div>
 
-
-
+    <!-- Projects Subsection -->
+    <section id="projects-section">
+        <h2>Projects</h2>
+    <div class="project-subsection">
+        <div #swiperRef="" class="swiper card-swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://github.com/skylee01244/3D-League" target="_blank" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/game_screen_1.webp" type="image/webp">
+                        <img src="images/game_screen_1.png" alt="Pixel Pursuit">
+                    </picture>
+                    <h4>PIXEL PURSUIT</h4>
+                    <h5><em>C + +</em></h5>
+                    <p>PIXEL PURSUIT, a 3D horror chasing game, is a high-performance application developed in C++ using SFML.</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://github.com/skylee01244/library-system" target="_blank" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/library_screen_3.webp" type="image/webp">
+                        <img src="images/library_screen_3.png" alt="Library Management System">
+                    </picture>
+                    <h4>Library Management System</h4>
+                    <h5><em>Python, MySQL</em></h5>
+                    <p>Library Management System, a Python PyQt6 application integrated with MySQL, efficiently manages library operations.</p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://github.com/stephanieran/functional-adventure" target="_blank" class="project-box">
+                    <picture>
+                        <source srcset="images/webp/haskell-text-game.webp" type="image/webp">
+                        <img src="images/haskell-text-game.png" alt="Functional Adventure">
+                    </picture>
+                    <h4>Functional Adventure</h4>
+                    <h5><em>Haskell</em></h5>
+                    <p>Functional adventure is a text-based adventure game with the goal of traversing the map to find a specific item.</p>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
     
-    <section class="hidden">
-        <h1>Hi Mom</h1>
-        <p>This is my website</p>
+    <!-- Design Projects Subsection -->
+    <div class="project-subsection">
+        <h3>Design</h3>
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://hibinolab.com/" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/tissue-patch-1.webp" type="image/webp">
+                                <img src="images/tissue-patch-1.png" alt="Tissue Patch">
+                            </picture>
+                            <h4>3D Bioprinted Mold</h4>
+                            <h5><em>OnShape, Lumen X Bioprinter</em></h5>
+                            <p>Designed a mold for research lap to reduce cell usage while maintaining tissue patch functionality.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.figma.com/file/LbgAdL6kVLjecPz1XYQLRs/12weekyear?type=design&node-id=0-1&mode=design&t=NSBiFfataJC4wMu8-0\" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/twelve-week-year.webp" type="image/webp">
+                                <img src="images/twelve-week-year.png" alt="12 Week Year">
+                            </picture>
+                            <h4>12 Week Year</h4>
+                            <h5><em>Figma</em></h5>
+                            <p>I created a prototype for a mobile self improvement application based on principles from the book <em>12 week year</em>.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.figma.com/design/dgGOVpe334IiQeQ48oHi7n/Course-Registration?node-id=0-1&p=f&t=1DJRWMw4xOXlk2TY-0" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/mpcs-redesign.webp" type="image/webp">
+                                <img src="images/mpcs-redesign.png" alt="MPCS Redesign">
+                            </picture>
+                            <h4>MPCS Redesign</h4>
+                            <h5><em>Figma</em></h5>
+                            <p>I redesigned the website to make it simpler and more enjoyable to use.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <a href="https://youtu.be/9gVfe0mJjMQ" target=_blank class="project-box">
+                            <picture>
+                                <source srcset="images/webp/wasted-ocean-1.webp" type="image/webp">
+                                <img src="images/wasted-ocean-1.png" alt="Wasted Ocean Mural">
+                            </picture>
+                            <h4>Wasted Ocean</h4>
+                            <h5><em>Final Cut Pro X</em></h5>
+                            <p>I spearheaded the installation of <em>Wasted Ocean</em>, a mural of ocean life made entirely from student waste.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <a href="https://www.figma.com/design/ldmrdlXEzcKOQCGWQD9hzG/Assignment-5---Native-App-with-Retention?node-id=0-1&p=f&t=SH0RlarLtnl9onec-0" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/job-seaerch-design.webp" type="image/webp">
+                                <img src="images/job-seaerch-design.png" alt="Job Search App">
+                            </picture>
+                            <h4>Job Search App</h4>
+                            <h5><em>Figma</em></h5>
+                            <p>I designed a simple native job search iOS app targeted towards new grads.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.figma.com/design/ugfzGq3DAgZKZX5YzDI2vE/RecipeWebsite?node-id=0-1&p=f&t=aRh6L1fb70qqi10w-0" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/lunisolar.webp" type="image/webp">
+                                <img src="images/lunisolar.png" alt="Lunisolar">
+                            </picture>
+                            <h4>Lunisolar</h4>
+                            <h5><em>Figma</em></h5>
+                            <p>I designed a simple recipe website page inspired by the Lunar New Year.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </section>    
+        <div class="divider"></div>
+        <section id="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-swift"></i>
+                <i class="fa-brands fa-figma"></i>
+                <i class="fa-brands fa-git-alt"></i>
+                <i class="fa-brands fa-github-alt"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="devicon-r-plain"></i>
+                <i class="devicon-c-plain-wordmark"></i>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section id="leave-message-section">
+            <h2>Leave a Message!</h2>
+            <p>coming soon :)</p>
     </section>
 
-    <section class="hidden">
-        <h2>Buy my product</h2>
-        <p>
-            The things you own end up owning you
-            It's only after you lose everything that you're free to do anything
-        </p>
-    </section>
-
-    <section class="hidden">
-        <h2>3D FPS League</h2>
-        <p>
-            <ul>
-                <li>Developed an immersive C++ game using the Simple and Fast Multimedia Library (SFML), where players
-                    navigate through a maze while being relentlessly pursued.</li>
-                <li>Implements Astar pathfinding to follow the player and
-                    utilized object-oriented programming (OOP) principles to structure and organize the source code, enhancing
-                    maintainability and scalability.</li>
-                <li>Incorporated a ray tracing algorithm to render a realistic 3D environment,
-                    adding depth and visual complexity to the game.</li>
-            </ul>
-        </p>
-    </section>
+    <!-- Swiper JS -->
+    <footer>
+        <p>&copy; <span id="year"></span> Sky Lee. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+    
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+    </script>
 
 </body>
 </html>
