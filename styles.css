@@ -50,13 +50,14 @@ nav {
 
 nav .left a {
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
 nav .right a {
     color: var(--text-color);
-    font-size: 1.375rem;
+    font-size: 2rem;
+    font-weight: 600;
     margin: 0 0.625rem;
 }
 
@@ -232,7 +233,7 @@ section h2::after {
 #projects-section {
     width: 100%;
     margin: auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,10 +364,11 @@ section h2::after {
 }
 
 #leave-message-section p {
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: #555;
     max-width: 600px;
     line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Cards Swiper */
